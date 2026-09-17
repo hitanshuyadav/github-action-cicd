@@ -1,0 +1,15 @@
+name: CICD Pipeline
+
+on: 
+  push:
+
+jobs:
+  code:
+  build:
+    needs: code
+    
+  test:
+    needs: build
+    
+  deploy:
+    needs: test
