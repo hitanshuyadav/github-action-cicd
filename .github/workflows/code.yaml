@@ -1,0 +1,12 @@
+#name of the workflow
+name: code
+
+#when the workflow should run
+on:
+  push
+
+jobs:
+  codechekout:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 
