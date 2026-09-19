@@ -5,11 +5,11 @@ on:
 
 jobs:
   code:
+    uses: ./.github/workflows/code.yaml
   build:
     needs: code
+    uses: ./.github/workflows/build.yaml
     
-  test:
+  push:
     needs: build
-    
-  deploy:
-    needs: test
+    uses: ./.github/workflows/push.yaml
