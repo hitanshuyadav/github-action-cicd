@@ -7,5 +7,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: push image to dockerhub
-        run: echo"pushing the image to dockerhub"
+        run: echo "pushing the image to dockerhub"
       
