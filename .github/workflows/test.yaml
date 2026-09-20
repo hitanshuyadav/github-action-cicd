@@ -1,0 +1,12 @@
+name: test
+on:
+  workflow_call:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checking code
+        run: echo "checking code quality"
+      - name: checking code error
+        run: echo "checking code error"
