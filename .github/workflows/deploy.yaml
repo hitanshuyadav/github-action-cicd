@@ -1,0 +1,13 @@
+name: deploy
+on: 
+  workflow_call:
+
+jobs:
+  deploy:
+    runs-on: self-hosted
+    steps:
+      - name: code clone
+        run: actions/checkout@v7
+      - name: deploy code
+        run: cp index.html /usr/share/nginx/html
+        
