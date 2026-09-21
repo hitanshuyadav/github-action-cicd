@@ -1,6 +1,6 @@
 name: deploy
 on: 
-  workflow_call:
+  push: 
 
 jobs:
   deploy:
